@@ -2281,6 +2281,11 @@ h1, h2, h3, h4, h5,
     -moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
     box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33); }
 
+    /* @media (max-width: 767.98px)  {
+      .ftco-about .img-about .img {
+        height: 100%;
+    }} */
+
 .ftco-about ul.about-info {
   display: inline-block;
   padding: 0;
@@ -2711,7 +2716,8 @@ textarea.form-control {
   text-transform: uppercase;
   color: black;
   color: #8B0304;
-  letter-spacing: 3px; }
+  letter-spacing: 3px; 
+  margin-top: 30px;}
 
 .heading-section h2 {
   font-size: 40px;
@@ -2723,7 +2729,8 @@ textarea.form-control {
       font-size: 28px; } }
 
 .heading-section.heading-section-white .subheading {
-  color: rgba(255, 255, 255, 0.9) !important; }
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-top: 100px;}
 
 .heading-section.heading-section-white h2 {
   color: #fff; }
@@ -2811,7 +2818,17 @@ textarea.form-control {
     .ftco-counter .counter-wrap {
       margin-bottom: 20px; } }
 
-.block-20 {
+      .block-20 {
+        /* overflow: hidden; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 300px; }
+
+.block-20a {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2820,6 +2837,10 @@ textarea.form-control {
   display: block;
   width: 100%;
   height: 300px; }
+
+  @media (max-width: 768px) {
+    .block-20a {
+      height: 600px; } } 
 
 .blog-entry {
   position: relative; }
@@ -2833,11 +2854,29 @@ textarea.form-control {
     width: 100%;
     margin: 0 auto; }
     .blog-entry .text .heading {
-      font-size: 20px;
+      font-size: 20px;  
       margin-bottom: 16px;
       font-weight: 500; }
       .blog-entry .text .heading a {
         color: #000000; }
+
+   
+
+
+        .blog-entry .text .heading {
+          font-size: 20px;  
+          margin-bottom: 16px;
+          font-weight: 500; }
+          
+    
+            @media (max-width: 767.98px){
+            .blog-entry .text .heading, .blog-entry .text #pp{
+             margin-left: 30%;
+            margin-right: auto; }}
+      
+
+
+
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
           color: #8B0304; }
   .blog-entry .meta {
